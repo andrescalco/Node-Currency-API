@@ -5,7 +5,30 @@
 ## Como Usar
 
 `npm install` && `npm start`
- 
+
+## Rotas
+
+```
+/api/cotacao/moedas
+Lista as moedas existentes para cotação nesta API 
+
+/api/cotacao/moeda/cad
+Mostra a cotação do CAD
+
+/api/cotacao/moeda/usd
+Mostra a cotação do USD
+
+/api/cotacao/moeda/eur
+Mostra a cotação do EUR
+
+/api/cotacao/moeda/gbp
+Mostra a cotação do GBP
+
+/api/cotacao/moeda/aud
+Mostra a cotação do AUD
+
+```
+
 ## Contribua
 
 Se você quiser, você pode enviar seu feedback, relatórios de bugs e até mesmo um pull request
