@@ -1,5 +1,5 @@
 {
-  "name": "Node Currency API",
+  "name": "node-currency-api",
   "version": "1.0.0",
   "description": "API de cotação de algumas moedas para a nossa.",
   "main": "server.js",
