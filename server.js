@@ -2,7 +2,7 @@
 var express = require('express'),
 	app = express(),
 	apiRoutes = express.Router(),
-	port = 8080,
+	port = app.listen(process.env.PORT || 3000),
 	config = require('./config/config')(app),
 	router = require('./routes/router')(apiRoutes);
 	routes = require('./routes/routes')(app),
@@ -15,4 +15,4 @@ app.use('/api',apiRoutes);
 app.use(ctrlRequest.badRequest);
 
 // inicia a aplicação
-app.listen(port);
+app.listen(process.env.PORT || 8080);

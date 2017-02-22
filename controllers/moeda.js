@@ -9,6 +9,14 @@ function Moeda(req,res,next) {
 	var params = req.params,
 	moeda = params['moeda'].toUpperCase();
 
+/*
+@ TODO
+	ARS : https://www.melhorcambio.com/peso-argentino-hoje
+	CLP : https://www.melhorcambio.com/peso-chileno-hoje
+	CHF : https://www.melhorcambio.com/franco-suico-hoje
+	JPY : https://www.melhorcambio.com/iene-hoje
+*/
+
 	var moedas = {
 		'CAD' : {
 			path : 'dolar-canadense-hoje',
