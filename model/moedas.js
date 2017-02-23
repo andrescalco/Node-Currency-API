@@ -78,7 +78,7 @@ moedas['CHF'] = chf.getContent();
 let jpy = new Moeda();
 
 jpy.setMoeda('JPY');
-jpy.setNome('Franco Suíço');
+jpy.setNome('Iene');
 jpy.setFonte('Melhor Cambio - https://www.melhorcambio.com');
 jpy.setContent();
 
