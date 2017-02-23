@@ -9,22 +9,16 @@ function Moeda(req,res,next) {
 	var params = req.params,
 	moeda = params['moeda'].toUpperCase();
 
-/*
-@ TODO
-	ARS : https://www.melhorcambio.com/peso-argentino-hoje
-	CLP : https://www.melhorcambio.com/peso-chileno-hoje
-	CHF : https://www.melhorcambio.com/franco-suico-hoje
-	JPY : https://www.melhorcambio.com/iene-hoje
-*/
-
 	var moedas = {
 		'CAD' : {
 			path : 'dolar-canadense-hoje',
-			chave : 'CAD'
+			chave : 'CAD',
+			nome : 'DOLAR CANADENSE',
 		},
 		'USD' : {
 			path : 'dolar-hoje',
-			chave : 'USD'
+			chave : 'USD',
+			nome : 'DOLAR',
 		},
 		'EUR' : {
 			path : 'euro-hoje',
@@ -32,13 +26,34 @@ function Moeda(req,res,next) {
 		},
 		'GBP' : {
 			path : 'libra-hoje',
-			chave : 'GBP'
+			chave : 'GBP',
+			nome : 'LIBRA',
 		},
 		'AUD' : {
 			path : 'dolar-australiano-hoje',
-			chave : 'AUD'
+			chave : 'AUD',
+			nome : 'DOLAR AUSTRALIANO',
 		},
-
+		'ARS' : {
+			path : 'peso-argentino-hoje',
+			chave : 'ARS',
+			nome : 'PESO ARGENTINO',
+		},
+		'CLP' : {
+			path : 'peso-chileno-hoje',
+			chave : 'CLP',
+			nome : 'PESO CHILENO',
+		},
+		'CHF' : {
+			path : 'franco-suico-hoje',
+			chave : 'CHF',
+			nome : 'FRANCO SUICO',
+		},
+		'JPY' : {
+			path : 'iene-hoje',
+			chave : 'JPY',
+			nome : 'IENE',
+		},
 	}
 
 	if ( moedas[moeda] ) {

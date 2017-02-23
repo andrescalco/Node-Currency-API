@@ -24,6 +24,7 @@ function MelhorCambio(obj,req,res,next) {
 				msg.setCode('000');
 				msg.setContent({ 
 					"moeda": obj.chave,
+					"nome": obj.nome,
 					"valor" : "R$ " + valor,
 					"fonte": "Melhor Cambio - " + url
 				});

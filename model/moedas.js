@@ -48,4 +48,40 @@ aud.setContent();
 
 moedas['AUD'] = aud.getContent();
 
+let ars = new Moeda();
+
+ars.setMoeda('ARS');
+ars.setNome('Peso Argentino');
+ars.setFonte('Melhor Cambio - https://www.melhorcambio.com');
+ars.setContent();
+
+moedas['ARS'] = ars.getContent();
+
+let clp = new Moeda();
+
+clp.setMoeda('CLP');
+clp.setNome('Peso Chileno');
+clp.setFonte('Melhor Cambio - https://www.melhorcambio.com');
+clp.setContent();
+
+moedas['CLP'] = clp.getContent();
+
+let chf = new Moeda();
+
+chf.setMoeda('CHF');
+chf.setNome('Franco Suíço');
+chf.setFonte('Melhor Cambio - https://www.melhorcambio.com');
+chf.setContent();
+
+moedas['CHF'] = chf.getContent();
+
+let jpy = new Moeda();
+
+jpy.setMoeda('JPY');
+jpy.setNome('Franco Suíço');
+jpy.setFonte('Melhor Cambio - https://www.melhorcambio.com');
+jpy.setContent();
+
+moedas['JPY'] = jpy.getContent();
+
 module.exports = moedas;
