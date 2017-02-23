@@ -27,6 +27,17 @@ Mostra a cotação do GBP
 /api/cotacao/moeda/aud
 Mostra a cotação do AUD
 
+/api/cotacao/moeda/ars
+Mostra a cotação do ARS
+
+/api/cotacao/moeda/clp
+Mostra a cotação do CLP
+
+/api/cotacao/moeda/chf
+Mostra a cotação do CHF
+
+/api/cotacao/moeda/jpy
+Mostra a cotação do JPY
 ```
 
 ## Contribua
